@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>E-Commerce Site</title>
+ 
+</head>
+<body>
+  <h2>E-Commerce Site</h2>
+
+  <div class="container">
+
+    <div class="card" onclick="addBasket('Product 1', 19.99)">
+      <h3>Product 1</h3>
+      <p>$19.99</p>
+    </div>
+
+    <div class="card" onclick="addBasket('Product 2', 29.99)">
+      <h3>Product 2</h3>
+      <p>$29.99</p>
+    </div>
+
+    <div class="card" onclick="addBasket('Product 3', 39.99)">
+      <h3>Product 3</h3>
+      <p>$39.99</p>
+    </div>
+
+    <div class="basket">
+      <h2>Basket</h2>
+      <ul id="basketList"></ul>
+      <p class="total">Total: $<span id="total">0.00</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+
+  </div>
+
+ <script src="./index.js"></script>
+  
+</body>
+</html>
